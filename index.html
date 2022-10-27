@@ -28,7 +28,7 @@
             ><span class="logo-accent">Web</span>Studio</a
           >
           <ul class="site-nav list">
-            <li>
+            <li class="site-nav-item">
               <a class="nav-link current link" href="./index.html">Студія</a>
             </li>
             <li>
@@ -44,15 +44,14 @@
           <li class="contacts-item">
             <a href="mailto:info@devstudio.com" class="contacts-item-link link">
               <svg class="contacts-item-icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope-hover"></use>
-                </svg>info@devstudio.com</a
-            >
+                <use href="./images/icons.svg#icon-envelope-hover"></use></svg>
+                info@devstudio.com</a>
           </li>
           <li class="contacts-item">
             <a href="tel:+380961111111" class="contacts-item-link link"
               ><svg class="contacts-item-icon" width="10" height="16">
-                <use href="./images/icons.svg#icon-smartphone1"></use>
-                </svg>+38 096 111 11 11
+                <use href="./images/icons.svg#icon-smartphone1"></use></svg>
+                +38 096 111 11 11
             </a>
           </li>
         </ul>
@@ -64,12 +63,12 @@
       <section class="section hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="button">
+          <button data-modal-open type="button" class="button">
             <span class="text-button">Замовити послугу</span>
           </button>
         </div>
       </section>
-      
+
       <!--Головні якості компанії-->
       <section class="section">
         <div class="container">
@@ -126,6 +125,7 @@
                 alt="Людина друкує код на клавіатурі"
                 width="370"
               />
+              <h3 class="image-title">Десктопні додатки</h3>
             </li>
             <li class="list-image">
               <img
@@ -133,6 +133,7 @@
                 alt="Людина тримає телефон"
                 width="370"
               />
+              <h3 class="image-title">Мобільні додатки</h3>
             </li>
             <li class="list-image">
               <img
@@ -140,6 +141,7 @@
                 alt="Людина тримає планшет"
                 width="370"
               />
+              <h3 class="image-title">Дизайнерські рішення</h3>
             </li>
           </ul>
         </div>
@@ -460,5 +462,17 @@
         </div>
       </div>
     </footer>
+    <div data-modal class="backdrop is-hidden">
+      <div class="modal">
+        <button data-modal-close class="close-button">
+            <img
+              class="modal-img"
+              src="./images/close.svg"
+              alt="Закрити вікно"
+            />
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
